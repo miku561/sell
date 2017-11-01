@@ -15,7 +15,6 @@ export default new Router({
     },
     {
       path: '/goods',
-      rediret: 'goods',
       name: 'goods',
       component: Goods
     },

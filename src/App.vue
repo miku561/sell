@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-header></v-header>
+    <v-header :seller="seller"></v-header>
     <div class="tab border-1px">
       <div class="tab-item">
        <router-link to="/goods">商品</router-link>    
@@ -18,9 +18,22 @@
 
 <script>
   import header from '@/components/header/header'
+  import axios from 'axios'
   export default {
+    data () {
+      return {
+        seller: {},
+        goods: {},
+        ratings: {}
+      }
+    },
     components: {
       'v-header': header
+    },
+    created () {
+      axios.get('static/data.json').then(res => {
+        this.seller = res.data.seller
+      })
     }
   }
 </script>
