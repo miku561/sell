@@ -2,16 +2,17 @@
 ## Vue 2.0 + vue-router + axios
 
 ###You can clone the Project 
-`cd sell`
 
-`npm install`
+>`cd sell`
 
-`npm run dev`
+>`npm install`
 
--- - - - - - index.html 
--- - - - - - - App.vue
--- - - - - - - - header
--- - - - - - - - goods
--- - - - - - - - seller
--- - - - - - - - ratings
+>`npm run dev`
+
+- index.html 
+-  —— App.vue
+-  ——— header.vue
+-  ——— goods.vue
+-  ——— seller.vue
+-  ——— ratings.vue
 > つづく
