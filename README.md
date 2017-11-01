@@ -1,2 +1,17 @@
-# 外卖App 练习项目
+# Vue sell app exercise
 ## Vue 2.0 + vue-router + axios
+
+###You can clone the Project 
+`cd sell`
+
+`npm install`
+
+`npm run dev`
+
+-- - - - - - index.html 
+-- - - - - - - App.vue
+-- - - - - - - - header
+-- - - - - - - - goods
+-- - - - - - - - seller
+-- - - - - - - - ratings
+> つづく
