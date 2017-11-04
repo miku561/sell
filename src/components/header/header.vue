@@ -12,9 +12,9 @@
         <p>
           {{ seller.description }}/{{ seller.deliveryTime }}分钟送达
         </p>
-        <p>
+        <p v-if="seller.supports">
           <span class="activity-signal"></span>
-          <span>{{ seller.supports.description }}</span>
+          <span>{{ seller.supports[0].description }}</span>
         </p>
       </div>
       <div class="pub-ad">
@@ -33,9 +33,6 @@
 
 <script>
   export default {
-    data: {
-      activeObj: ['在线支付满28减5', 'VC无限橙果汁全场8折', '单人精彩套餐', '该商家支持发票,请下单写好发票抬头', '已加入“外卖保”计划,食品安全保障']
-    },
     props: {seller: {type: Object}}
   }
 </script>
