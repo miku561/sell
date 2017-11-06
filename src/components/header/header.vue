@@ -41,6 +41,7 @@
 <style lang="scss" rel="stylesheet/scss">
   @import "../../common/sass/mixin.scss";
   .header{
+    position: relative;
     background: #889;
     color: #fff;
     .avatar{
@@ -99,6 +100,47 @@
           line-height: 12px;
           font-size: 10px;
         }
+      }
+    }
+    .pub-ad{
+        position:   relative;
+        padding-right: 16px;
+        height: 28px;
+        width: 98%;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        line-height: 28px;
+        font-size: 10px;
+        background: rgba(7, 17, 27, 0.2);
+        .ad-sign{
+          display: inline-block;
+          margin:0 4px 0 12px;
+          width: 22px;
+          height: 12px;
+          vertical-align: text-bottom;
+          @include bg-media(bulletin);
+          background-repeat: no-repeat;
+          background-size: 22px 12px;
+        }
+        i{
+          position: absolute;
+          top:10px;
+          right: 12px;
+        }
+      }
+    .num-title{
+      position: absolute;
+      right:16px;
+      bottom:40px;
+      padding:8px 10px;
+      border-radius: 12px;
+      line-height: 12px;
+      font-size: 10px;
+      color: #fff;
+      background: rgba(0, 0, 0, 0.2);
+      i{
+        vertical-align: text-bottom;
       }
     }
   }
